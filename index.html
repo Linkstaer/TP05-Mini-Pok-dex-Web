@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/pokebola.webp">
+    <link rel="stylesheet" href="./css/cualquiera.css">
+    <script defer src="./js/app.js"></script>
+    <title>Pokédex</title>
+</head>
+<body>
+    <main>
+        <img src="./img/Pokedex.png" alt="pokedex" class="pokedex-bg"> 
+
+        <div class="pokedex__left">
+            <img src="#" alt="pokemon" class="pokemon__image" style="display: none;">
+            <h1 class="pokemon__data">
+                <span class="pokemon__number"></span> - <span class="pokemon__name">Cargando...</span>
+            </h1>
+        </div>
+
+        <div class="pokedex__right">
+            <div class="pokemon__extra-data">
+                <p>Tipo: <span class="pokemon__type"></span></p>
+                <p>Peso: <span class="pokemon__weight"></span> kg</p>
+                <p>Altura: <span class="pokemon__height"></span> m</p>
+            </div>
+        </div>
+
+        <form class="form">
+            <input 
+                type="search" 
+                class="input__search"
+                placeholder="Nombre o Número"
+                required
+            />
+        </form>
+         
+        <div class="buttons">
+            <button class="button btn-prev">Anterior &lt;</button>
+            <button class="button btn-next">&gt; Siguiente</button>
+        </div>
+    </main>
+</body>
+</html>
